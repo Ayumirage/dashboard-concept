@@ -34,8 +34,9 @@ export default () => {
         </Text>
       </Flex>
       <Stack mt={4}>
-        <Item title="Arbitrum" subtitle="Disable" />
-        <Item title="Optimism" subtitle="Enable" enabled />
+        <Item title="Ethereum" subtitle="Disable" enabled />
+        <Item title="Arbitrum" subtitle="Enable" />
+        <Item title="Optimism" subtitle="Enable" />
       </Stack>
     </Box>
   );

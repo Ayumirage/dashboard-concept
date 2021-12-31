@@ -8,7 +8,7 @@ export default () => {
       _hover={{ cursor: "pointer" }}
       p={4}
       borderRadius="md"
-      bg={active ? "#6FBD71" : "white"}
+      bg={active ? "orange.300" : "white"}
       textColor={active ? "white" : "gray"}
     >
       {icon}

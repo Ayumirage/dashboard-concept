@@ -28,7 +28,7 @@ function App() {
               <BigCard />
             </GridItem>
             <GridItem colSpan={2}>
-              <Text
+              {/* <Text
                 fontWeight="semibold"
                 fontSize="sm"
                 textColor="gray"
@@ -36,10 +36,10 @@ function App() {
                 ml={8}
               >
                 FEES
-              </Text>
-              <Stack spacing={4}>
-                <SmallCard value="0.069%" text="MAKER" />
-                <SmallCard value="0.069%" text="MAKER" />
+              </Text> */}
+              <Stack spacing={3}>
+                <SmallCard value="$32,000" text="BORROWED VALUE" />
+                <SmallCard value="$64,000" text="BORROWED LIMIT" />
               </Stack>
             </GridItem>
           </SimpleGrid>

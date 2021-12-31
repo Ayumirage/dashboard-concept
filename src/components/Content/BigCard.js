@@ -6,22 +6,22 @@ import { Box } from "@chakra-ui/layout";
 
 export default ({ title, balance, balance2, income, expense }) => {
   return (
-    <Box p={8} borderRadius="3xl" bg="#6699CC" textColor="white">
+    <Box p={8} borderRadius="3xl" bg="purple.700" textColor="white">
       <Text textTransform="uppercase" fontSize="xs" fontWeight="bold">
-        BALANCE DETAILS
+        TOTAL DEPOSITS
       </Text>
-      <Heading mt={6}>$ 1,500,000.00</Heading>
+      <Heading mt={4}>2.34105027 BTC</Heading>
       <Text fontSize="sm" textColor="gray.200" mt={1}>
-        3.34105027 BTC
+        $ 112,010
       </Text>
       <HStack mt={4}>
         <Box w="50%">
-          <Heading size="sms">$12,256.00</Heading>
-          <Text fontSize="xs">Income</Text>
+          <Heading size="sms">50%</Heading>
+          <Text fontSize="xs">LTV Ratio</Text>
         </Box>
         <Box w="50%">
-          <Heading size="sms">$20,289.00</Heading>
-          <Text fontSize="xs">Expense</Text>
+          <Heading size="sms">60%</Heading>
+          <Text fontSize="xs">MAX LTV</Text>
         </Box>
       </HStack>
 
@@ -29,12 +29,12 @@ export default ({ title, balance, balance2, income, expense }) => {
       <HStack mt={4}>
         <Box w="50%">
           <Button w="full" textColor="#6699CC">
-            RECEIVE
+            DEPOSIT
           </Button>
         </Box>
         <Box w="50%">
-          <Button w="full" bg="#6FBD71">
-            SEND
+          <Button w="full" bgGradient="linear(to-r, orange.500, orange.300)">
+            BORROW
           </Button>
         </Box>
       </HStack>

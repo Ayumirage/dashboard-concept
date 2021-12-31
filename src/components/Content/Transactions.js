@@ -5,6 +5,7 @@ import { Spacer } from "@chakra-ui/layout";
 import { Flex } from "@chakra-ui/layout";
 import { Box } from "@chakra-ui/layout";
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
+import { Image } from "@chakra-ui/image";
 
 export default () => {
   const Item = ({ icon, title, date, amount, isSent }) => (
@@ -42,7 +43,7 @@ export default () => {
   return (
     <Box>
       <Flex fontSize="sm" textColor="gray.400">
-        <Text>TRANSACTIONS</Text>
+        <Text>Your Transaction History</Text>
         <Spacer />
         <Text
           fontWeight="semibold"
@@ -54,13 +55,19 @@ export default () => {
       </Flex>
       <Stack mt={4} spacing={4}>
         <Item
-          title="Sent BTC"
-          date="11 Dec, 2021"
+          title="Deposited stETH"
+          date="01 Jan, 2022"
           amount="-$10,180.00"
           isSent
         />
-        <Item title="Received USDT" date="9 Nov, 2021" amount="+$12,369.00" />
-        <Item title="Sent CRV" date="01 Okt, 2021" amount="-$2,889.00" isSent />
+
+        <Item title="Claimed CVE" date="31 Dec, 2021" amount="+$2,369.00" />
+        <Item
+          title="Deposited CRVETH"
+          date="01 Okt, 2021"
+          amount="-$2,889.00"
+          isSent
+        />
       </Stack>
     </Box>
   );

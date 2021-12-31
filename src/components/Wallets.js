@@ -5,6 +5,7 @@ import { Heading } from "@chakra-ui/layout";
 import { Flex } from "@chakra-ui/layout";
 import { Box } from "@chakra-ui/layout";
 import { BiBitcoin } from "react-icons/bi";
+import { Image } from "@chakra-ui/image";
 
 export default () => {
   const Wallet = ({
@@ -54,54 +55,45 @@ export default () => {
   return (
     <Box ml={6} mr={4}>
       <Flex mb={4} textColor="gray.400" fontSize="sm">
-        <Text>WALLETS</Text>
+        <Text>DEPOSIT COLLATERAL</Text>
         <Spacer />
         <Text
           fontWeight="semibold"
           textColor="blackAlpha.700"
           _hover={{ cursor: "pointer" }}
         >
-          VIEW ALL
+          vAPR
         </Text>
       </Flex>
       <Stack>
         <Wallet
-          title="BTC"
-          subtitle="Bitcoin"
-          icon={<BiBitcoin />}
-          percent="37%"
+          title="CVX"
+          subtitle="Convex Pools"
+          icon={<Image src="/assets/cvx.svg" w={12} />}
+          percent="22%"
           change="-2.5%"
           loss
           color1="#FFECE8"
           color2="#FE8F7B"
         />
         <Wallet
-          title="DAI"
-          subtitle="Dai"
-          icon={<BiBitcoin />}
-          percent="23%"
+          title="YFI"
+          subtitle="Yearn Pools"
+          icon={<Image src="/assets/yfi.svg" w={12} />}
+          percent="16%"
           change="+2.5%"
           color1="#FCF6DD"
           color2="#EDCC48"
         />
         <Wallet
-          title="ETH"
-          subtitle="Ethereum"
-          icon={<BiBitcoin />}
-          percent="20%"
+          title="CRV"
+          subtitle="Curve Pools"
+          icon={<Image src="/assets/crv.svg" w={12} />}
+          percent="14%"
           change="-3.5%"
           loss
           color1="#E0F4F8"
           color2="#43B8D5"
-        />
-        <Wallet
-          title="USDT"
-          subtitle="Tether"
-          icon={<BiBitcoin />}
-          percent="17%"
-          change="+2.5%"
-          color1="#E0F8F2"
-          color2="#4BD7B1"
         />
       </Stack>
     </Box>
